@@ -1,14 +1,34 @@
 body {
+    margin: 0px;
     font-family: "Roboto" sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a {
     padding-left: 30px;
 }
 
-.header{
-    background-color:dimgrey;
+.p1, .p2 {
+    color: white;
 }
+
+.p1 {
+    font-size:42px;
+    font-weight: bold;
+}
+
+.p2 {
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.header{
+    flex: 25%;
+    background-color:#1F2937;
+}
+
 .logo-font {
     color: white;
 }
@@ -16,7 +36,7 @@ a {
 .link-font {
     text-decoration: none;
     color: lightgray;
-    font-size: 18px;
+    font-size: 32px;
 }
 .navbar {
     display: flex;
@@ -24,12 +44,115 @@ a {
 }
 
 .header-logo {
-    margin-left: 120px;
-    font-size: 20px;
+    margin-left: 150px;
+    font-size: 40px;
     color: white;
 }
 
 .header-links {
-    margin-right: 80px;
-    font-size: 18px;
+    margin-right: 150px;
+    font-size: 24px;
+}
+
+.header-description {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-description .left-section {
+    display: flex;
+    flex-direction: column;
+    margin: -40px 180px -40px 180px;
+}
+
+.header-description .right-section {
+    margin-right: 180px;
+    padding: 20px;
+}
+
+.button1{
+    border: 2px darkblue;
+    height: 40px;
+    width: 120px;
+    background-color:#3882F6 ;
+    color: white;
+    font-weight: bold;
+}
+
+.main-content{
+    flex: 25%;
+    display:flex;
+    flex-direction: column;
+}
+
+.aspects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.aspects-descriptions{
+    display:flex;
+    justify-content:space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.aspect {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.aspect strong{
+    font-size: 22px;
+}
+
+.quote {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-text{
+    font-size: 26px;
+    margin-left:300px;
+    margin-right: 300px;
+}
+
+.quote-text strong{
+    margin-right: -1000px;
+}
+
+.sign-modal{
+    background-color: #3882F6 ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 400px 70px 400px;
+    height: 100px;
+}
+
+.sign-text{
+    color:white;
+    margin-right: 40px;
+}
+
+.sign-modal .button1 {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color:white;
 }
